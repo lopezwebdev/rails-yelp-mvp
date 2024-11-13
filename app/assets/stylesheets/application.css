@@ -13,3 +13,105 @@
  *= require_tree .
  *= require_self
  */
+
+ .h1 {
+  text-align: center;
+}
+
+ .card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Container styling */
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* General container styling */
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Styling for restaurant name */
+.container h2 {
+  font-size: 1.8em;
+  color: #333;
+  border-bottom: 2px solid #ff6347;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* General styling for paragraphs */
+.container p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* Adding color distinction for each line */
+.container p:nth-child(2) {
+  color: #007acc; /* Address color */
+}
+
+.container p:nth-child(3) {
+  color: #ff6347; /* Category color */
+}
+
+.container p:nth-child(4) {
+  color: #555; /* Phone number color */
+}
